@@ -86,7 +86,7 @@
     }
 
     .art {
-      width: min(260px, 80vw);
+      width: 100%;
       margin: 0 auto 10px;
       display: block;
       filter: drop-shadow(0 10px 14px rgba(0,0,0,.12));
@@ -289,100 +289,11 @@
 
   <main class="card">
     <!-- TEDDY BEAR WITH HEART -->
-    <svg class="art" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Teddy bear holding a heart">
-      <defs>
-        <linearGradient id="bearFur" x1="0" x2="1" y1="0" y2="1">
-          <stop offset="0" stop-color="#d4a574"/>
-          <stop offset="0.5" stop-color="#c89968"/>
-          <stop offset="1" stop-color="#b8845c"/>
-        </linearGradient>
-        <linearGradient id="belly" x1="0" x2="1">
-          <stop offset="0" stop-color="#e8c4a0"/>
-          <stop offset="1" stop-color="#dbb89a"/>
-        </linearGradient>
-        <linearGradient id="heart" x1="0" x2="0.5" y1="0" y2="1">
-          <stop offset="0" stop-color="#ff6b9d"/>
-          <stop offset="0.5" stop-color="#ff3b7a"/>
-          <stop offset="1" stop-color="#ff1f68"/>
-        </linearGradient>
-        <filter id="heartGlow">
-          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-          <feMerge>
-            <feMergeNode in="coloredBlur"/>
-            <feMergeNode in="SourceGraphic"/>
-          </feMerge>
-        </filter>
-      </defs>
-
-      <!-- Back legs -->
-      <ellipse cx="110" cy="220" rx="28" ry="35" fill="url(#bearFur)"/>
-      <ellipse cx="210" cy="220" rx="28" ry="35" fill="url(#bearFur)"/>
-
-      <!-- Main body -->
-      <ellipse cx="160" cy="150" rx="62" ry="75" fill="url(#bearFur)"/>
-
-      <!-- Belly patch -->
-      <ellipse cx="160" cy="155" rx="42" ry="55" fill="url(#belly)" opacity="0.8"/>
-
-      <!-- Left arm -->
-      <g transform="translate(100, 130) rotate(-25)">
-        <ellipse rx="22" ry="45" fill="url(#bearFur)"/>
-        <!-- Paw -->
-        <circle cx="0" cy="48" r="18" fill="url(#bearFur)"/>
-      </g>
-
-      <!-- Right arm (holding heart) -->
-      <g transform="translate(220, 120) rotate(35)">
-        <ellipse rx="22" ry="45" fill="url(#bearFur)"/>
-        <!-- Paw -->
-        <circle cx="0" cy="48" r="18" fill="url(#bearFur)"/>
-      </g>
-
-      <!-- Head -->
-      <circle cx="160" cy="70" r="55" fill="url(#bearFur)"/>
-
-      <!-- Left ear -->
-      <circle cx="115" cy="25" r="22" fill="url(#bearFur)"/>
-      <circle cx="115" cy="28" r="12" fill="#8b6f47"/>
-
-      <!-- Right ear -->
-      <circle cx="205" cy="25" r="22" fill="url(#bearFur)"/>
-      <circle cx="205" cy="28" r="12" fill="#8b6f47"/>
-
-      <!-- Snout -->
-      <ellipse cx="160" cy="85" rx="28" ry="24" fill="url(#belly)"/>
-
-      <!-- Nose -->
-      <ellipse cx="160" cy="80" rx="10" ry="9" fill="#6b5344"/>
-
-      <!-- Eyes -->
-      <circle cx="138" cy="55" r="8" fill="#1a1a1a"/>
-      <circle cx="138" cy="53" r="3" fill="#fff" opacity="0.7"/>
-      
-      <circle cx="182" cy="55" r="8" fill="#1a1a1a"/>
-      <circle cx="182" cy="53" r="3" fill="#fff" opacity="0.7"/>
-
-      <!-- Mouth -->
-      <path d="M 160 92 Q 150 100 145 98" stroke="#6b5344" stroke-width="2" fill="none" stroke-linecap="round"/>
-      <path d="M 160 92 Q 170 100 175 98" stroke="#6b5344" stroke-width="2" fill="none" stroke-linecap="round"/>
-
-      <!-- Perfect Heart Shape (held by bear) -->
-      <path d="M 240 65
-               C 230 55, 215 50, 205 55 
-               C 195 50, 180 55, 180 68 
-               C 180 85, 200 100, 220 115 
-               C 240 100, 260 85, 260 68 
-               C 260 55, 245 50, 235 55 
-               C 240 50, 255 55, 255 68 Z"
-            fill="url(#heart)" 
-            filter="url(#heartGlow)"
-            stroke="#ff1f68" 
-            stroke-width="0.5" 
-            opacity="0.95"/>
-      
-      <!-- Heart shine -->
-      <ellipse cx="200" cy="60" rx="12" ry="8" fill="#fff" opacity="0.35"/>
-    </svg>
+    <img
+      class="art"
+      src="./teddy-heart.png"
+      alt="A cute teddy bear holding a heart"
+    />
 
     <h1>Debbie... Will You Be My Valentine?</h1>
 
